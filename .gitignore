@@ -6,3 +6,4 @@ officialheader.tex
 .DS_Store
 references.tex
 *.pdf
+.Rproj.user

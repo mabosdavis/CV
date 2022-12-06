@@ -22,7 +22,7 @@
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
-\usepackage[parfill]{parskip} % Remove paragraph indentation
+
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
@@ -89,7 +89,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  \MakeUppercase{\textbf{#1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
@@ -139,10 +139,9 @@
 }
 
 
-\newenvironment{pSubsection}[5]{ % 5 input arguments - company name, year(s) employed, job title and description
- {\bf #1}{#2} \hfill {#3} % Bold company name and date on the right
- \\ {\em #4}
- \\ {#5}
+\newenvironment{pSubsection}[3]{ % 5 input arguments - company name, year(s) employed, job title and description
+ {\bf #1} \hfill {#2} % Bold company name and date on the right
+ \\ {#3}
 }
 
 
